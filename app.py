@@ -4,6 +4,10 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
+def warn(*args, **kwargs):
+    pass
+import warnings
+warnings.warn = warn
 
 ps = PorterStemmer()
 
